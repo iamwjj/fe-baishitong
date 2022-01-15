@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/no-commonjs
+const path = require('path');
+
 const config = {
   projectName: 'baishitong',
   date: '2021-12-11',
@@ -59,6 +62,9 @@ const config = {
         }
       }
     }
+  },
+  alias: {
+    '@/assets': path.resolve(__dirname, '..', 'src/assets')
   }
 }
 

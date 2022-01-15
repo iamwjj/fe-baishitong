@@ -1,14 +1,11 @@
 import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import './index.scss'
+import MessageCard from './components/message-card'
 
 export default class Index extends Component {
 
-  componentWillMount () { }
-
   componentDidMount () { }
-
-  componentWillUnmount () { }
 
   componentDidShow () { }
 
@@ -16,8 +13,10 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='index'>
-        <Text>Hello world!</Text>
+      <View className='home'>
+        <View className='message-list'>
+          <MessageCard></MessageCard>
+        </View>
       </View>
     )
   }
